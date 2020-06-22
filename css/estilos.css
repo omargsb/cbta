@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  display: flex;
+  flex-wrap: wrap;
+/*********** A partir de aqui Controla logo y menu***************/  
+}
+.page-header{
+  overflow:visible;
+  background: #fff;
+  padding: 1em 0 0;
+  margin: 0 ;
+  height: 4em;
+  transition: all .4s linear;
+  position: fixed;
+  width: 100%;
+  z-index: 400;
+}
+.page-header .center-contents{
+  max-width: 950px;
+  margin: auto;
+  overflow: visible;
+  
+}
+.logo{
+  max-width: 60px;
+  display: block;
+  float: left;
+  margin: 0 0 1em 1em;
+}
+.logo img{
+  display: block;
+  width: 60px;
+}
+
+.page-nav ul li {
+  background-color:rgb(248, 248, 248);
+}
+
+.page-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.page-nav ul a {
+  display:block;
+  color:rgb(105, 100, 100);
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+.page-nav ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+.page-nav ul li:hover {
+  background:rgb(206, 197, 185);
+}
+
+.page-nav ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+  
+}
+
+.page-nav ul ul li {
+  float:none;
+  width:350px
+}
+
+.page-nav ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+.page-nav ul li:hover > ul {
+  display:block;
+}
+
+/*.menu{
+  background-color: #ff0000;
+  height: 80px;
+}*/
+
+.toggle-nav{
+  width: 45px;
+  height: 45px;
+  float: right;
+  padding: 1em;
+  margin: 0 0 1em 1em;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: block;
+  background-image: url(../images/white-menu-icon-png-18.png);
+  background-size: 50px ;  
+  background-repeat: no-repeat;
+  background-color: rgb(58, 216, 18);
+  justify-content: center;
+  align-items: center;
+  
+}
+.menu-expanded{
+  height: 21em;
+}
+/*********** Hasta aquí Controla logo y menu***************/
+.section{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  margin: 70px 0 0 0;
+  background-color: #bccfe5;
+  height: 400px;
+ 
+}
+.header img{
+  width: 100%;
+  height: 400px;
+}
+.content{
+ display: flex;
+ margin: 1em 0 0 0; 
+ height: 325px;
+ position: relative;
+ display: inline-flex;
+ background-color: rgb(241, 241, 241);
+}
+.ima1 img{
+  margin: 0 0 0 0;
+  max-width: 98%;
+  
+  position: relative;
+  opacity: 0.8;
+}
+.ima2 img{
+  display: flex;
+  max-width: 98%;
+  position: relative;
+  opacity: 0.5;
+  
+}
+.content .letrero{
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 0.1em 0.1em 0.1em black
+  
+}
+.content .letrero2{
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  color: #fff;
+  font-size: 1.5em;
+  text-shadow: 0.1em 0.1em 0.1em black
+}
+
+
+
+
+
+
+
+
+.footer{
+  background-color: #5e738a;
+}
+
+.feature-1 img{
+  display:block;
+  margin:auto;
+  max-width: 65%;
+}
+.feature-1 h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(85, 80, 81);
+}
+.feature-1 p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 1px 80px 1px 80px;
+  text-align: justify;
+  font-size: .9em;
+  color: rgb(85, 80, 81);
+ }
+ 
+ .feature-2 img{
+  display:block;
+  margin:auto;
+  max-width: 65%;
+}
+.feature-2 h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(85, 80, 81);
+}
+.feature-2 p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 1px 80px 1px 80px;
+  text-align: justify;
+  font-size: .9em;
+  color: rgb(85, 80, 81);
+ }
+
+ .feature-3 img{
+  display:block;
+  margin:auto;
+  max-width: 65%;
+}
+.feature-3 h4{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(85, 80, 81);
+}
+.feature-3 p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 1px 0 0 0;
+  padding: 1px 80px 1px 80px;
+  text-align: justify;
+  font-size: .9em;
+  color: rgb(85, 80, 81);
+ }
+
+
+@media only screen and (min-width: 450px){
+  .page-header span{
+      display: block;
+  }
+  .page-nav{
+      clear: left;
+      position: relative;
+      visibility: inherit;
+      transition: visibility .4s linear;
+  }
+}
+/****************
+Tableta
+***************/
+@media only screen and (min-width: 700px){
+  .page-header{
+      height: 6em;
+  }
+  .logo{
+      max-width: 92px;
+  }
+  .page-nav{
+      width: auto;
+      float: right;
+      display: block;
+      clear: none;
+      visibility: visible;
+  }
+  .page-header span{
+      display: none;
+  }
+  .page-nav ul, .page-nav li{
+      float: left;
+  }
+  .page-nav a{
+      border-top: none;
+  }
+}
+/*********************
+TABLETA
+**********************/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+  .sign-up, 
+  .feature-1,
+  .feature-2,
+  .feature-3{
+    width: 50%;
+  }
+}
+/**************
+ESCRITORIO
+***************/
+@media only screen and (min-width: 961px){
+  .page{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+  .page-header{
+     height: 75px;
+  }
+  
+    .header{
+    height: 400px;
+          }
+  .footer{
+    height: 50px;
+   
+         }
+  .content{
+    order: 0;
+         }
+}
+
+@media only screen and (max-width: 699px){
+    .collapse{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width: 700px){
+    .collapse{
+        visibility: inherit;
+    }
+}
